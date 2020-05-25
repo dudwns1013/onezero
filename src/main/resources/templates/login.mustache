@@ -1,0 +1,70 @@
+<!--Template Name: impressive-login
+File Name: index.html
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+Licence URI: http://www.themevault.net/license/
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>대림마켓</title>
+        <!-- Bootstrap core CSS -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+        <!-- Custom styles for this template -->
+<!--        <link rel="icon" href="images/favicon.png"/>-->
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <link href="css/log_bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body class="content">
+        <header>
+            <div class="logo text-center">
+                <h2>대 림 마 켓</h2>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 width-100">
+                    <form action="#" method="post">
+                        <div class="loginpage">
+                            <input class="form-control placeholder-fix" type="text" placeholder="학번을 입력해주세요" name="uname" required="">
+                            <input class="form-control placeholder-fix" type="password" placeholder="비밀번호를 입력해주세요" name="password" required="">
+                        </div>
+                        <div class="action-button">
+                            <button class="btn-block" type="submit">시작하기</button>
+                        </div>
+                    </form>
+                    <div class="action-button">
+                        <button class="btn-block" onclick="location.href='/'" >비회원으로 시작하기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="page-links">
+                    <li><a href="#" onclick="javascript:popup()" target="_blank">회원정보 찾기</a></li>
+                    <li><a href="/register">회 원 등 록</a></li>
+                </ul>
+<!--                <div class="social-button kakao">-->
+<!--                    <a href="#"><img src="images/kakao-login.png" alt="kakao"></a>-->
+<!--                </div>-->
+                <div class="copyright-box">
+                    <div class="copyright">
+                        <!--Do not remove Backlink from footer of the template. To remove it you can purchase the Backlink !-->
+<!--                        &copy; 2020 All right reserved. Designed by <a href="http://www.themevault.net/" target="_blank"><strong>ThemeVault.</strong></a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        function popup(){
+        var url = "finduser.html";
+        var name = "popup test";
+        var option = "width = 500, height = 500, top = 100, left = 200, location = no"
+        window.open(url, name, option);
+        }
+    </script>
+    </body>
+
+</html>

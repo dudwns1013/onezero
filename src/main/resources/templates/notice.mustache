@@ -1,0 +1,110 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+<title>공지사항</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="stylesheet" type="text/css" href="css/notice.css"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+
+<body>
+<div id="topmenu">
+    <div class="in_topmenu">
+        <div class="top_btns">
+            <a href="/"><img src="images/btn_home.gif" alt="홈"></a>
+            <a href="/login"><img src="images/btn_login.gif" alt="로그인"></a>
+        </div>
+    </div>
+</div>
+
+<div class="site-wrap">
+  <div class="site-navbar bg-white py-2">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <div class="">
+          <a href="/"><img src="images/titlelogo.png"></a>
+          </div>
+        </div>
+        <div class="main-nav d-none d-lg-block">
+          <nav class="site-navigation text-right text-md-center" role="navigation">
+            <ul class="site-menu js-clone-nav d-none d-lg-block">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li><a href="/notice">공지사항</a></li>
+              <li><a href="/shop">상품 목록</a></li>
+              <li class="has-children ">
+                <a href="#">내 정보</a>
+                <ul class="dropdown">
+                  <li><a href="#">정보 수정</a></li>
+                  <li><a href="#">구매 목록</a></li>
+                  <li><a href="#">판매목록</a></li>
+                  <li><a href="#">회원탈퇴</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="/service">고객센터</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icons">
+
+          <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--<div class="image">-->
+<!--  <p>로고가 들어갈 위치입니다</p>-->
+<!--</div>-->
+<div id="container">
+  <h1 style="text-align: center">공지사항</h1>
+    <table class="list-table">
+      <thead>
+          <tr>
+              <th width="70">번호</th>
+                <th width="500">제목</th>
+                <th width="120">글쓴이</th>
+                <th width="100">작성일</th>
+            </tr>
+        </thead>
+      <tbody>
+
+        <?php 
+                  while($row=mysqli_fetch_array($rs)){  
+                  ?>
+                  <tr>
+          <td width="70"><?php echo $row["id"]?></td>
+          <td width="500"><a href=""><?php echo $row["title"]?></a></td>
+          <td width="120"><?php echo $row["writer"]?></td>
+          <td width="120"><?php echo $row["timestamp"]?></td>
+          </tr>
+          <?php  
+                  }  
+                  ?> 
+
+      </tbody>
+    </table>
+  </div>
+  <div id="write_btn">
+    <a href="/write"><button>글쓰기</button></a>
+  </div>
+</div>
+
+{{>layout/footer}}

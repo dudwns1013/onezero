@@ -1,0 +1,167 @@
+
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>고객센터</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/notice.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+
+<body>
+<div class="site-wrap">
+
+
+    <div class="site-navbar bg-white py-2">
+
+
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <div class="site-logo">
+                        <!--              <a href="index.html" class="js-logo-clone"></a>-->
+                    </div>
+                </div>
+                <div class="main-nav d-none d-lg-block">
+                    <nav class="site-navigation text-right text-md-center" role="navigation">
+                        <ul class="site-menu js-clone-nav d-none d-lg-block">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="/shop">상품 목록</a></li>
+                            <li class="has-children ">
+                                <a href="#">내 정보</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">정보 수정</a></li>
+                                    <li><a href="#">구매 목록</a></li>
+                                    <li><a href="#">판매목록</a></li>
+                                    <li><a href="#">회원탈퇴</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/service">고객센터</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="icons">
+
+                    <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="image">-->
+    <!--  <p>로고가 들어갈 위치입니다</p>-->
+    <!--</div>-->
+    <div id="container">
+        <h1 style="text-align: center">Q&A 게시판</h1>
+        <table class="list-table">
+            <thead>
+            <tr>
+                <th width="70">번호</th>
+                <th width="500">제목</th>
+                <th width="120">글쓴이</th>
+                <th width="100">작성일</th>
+                <th width="100">조회수</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td width="70"><?php echo $board['idx']; ?></td>
+                <td width="500"><a href=""><?php echo $title;?></a></td>
+                <td width="120"><?php echo $board['name']?></td>
+                <td width="100"><?php echo $board['date']?></td>
+                <td width="100"><?php echo $board['hit']; ?></td>
+            </tr>
+            </tbody>
+        </table>
+        <div id="write_btn">
+            <a href="/page/board/write.php"><button>글쓰기</button></a>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer custom-border-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 ml-auto mb-6 mb-lg-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="footer-heading mb-4">Quick Links</h3>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <ul class="list-unstyled">
+                            <li><a href="#">퀵 메뉴1</a></li>
+                            <li><a href="#">퀵 메뉴2</a></li>
+                            <li><a href="#">퀵 메뉴3</a></li>
+                            <li><a href="#">퀵 메뉴4</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <ul class="list-unstyled">
+                            <li><a href="#">퀵 메뉴5</a></li>
+                            <li><a href="#">퀵 메뉴6</a></li>
+                            <li><a href="#">퀵 메뉴7</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <ul class="list-unstyled">
+                            <li><a href="#">퀵 메뉴8</a></li>
+                            <li><a href="#">퀵 메뉴9</a></li>
+                            <li><a href="#">퀵 메뉴10</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-lg-4">
+                <div class="block-5 mb-5">
+                    <h3 class="footer-heading mb-4">Contact Info</h3>
+                    <ul class="list-unstyled">
+                        <li class="address">경기도 안양시 비산동 임곡로 29</li>
+                        <li class="phone"><a href="tel://23923929210">010-8936-5320</a></li>
+                        <li class="email">tovie200@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+                <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">wontaeklee</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
