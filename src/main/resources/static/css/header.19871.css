@@ -1,0 +1,90 @@
+/* BASIC css start */
+#MAKESHOPLY0,#MAKESHOPLY1{display:none !important;}
+img[src='http://www.wmdkstore.co.kr/design/wmdk/wib/main/shadow.jpg']{display:none}
+
+
+
+html{overflow-x:hidden;}
+#content{width: 1100px; margin: 0 auto;}
+/* header ��� �޴� */
+#header { position:relative; width:100%; background:#fff; z-index:100 }
+#header.act { position:fixed; top:-144px; left:0; right:0 }
+#header .headerTop { position:relative;  width:100%; height:37px; border-bottom: 1px solid #e5e5e5; }
+#header .headerTop .First{width:1200px; height:144px; margin:0 auto; }
+#header .headerTop .tlogo {position: absolute;  top: 90px; width: 100%; margin-left: 2px;text-align: center; }
+#header .headerTop .tlogo a{color:#000; letter-spacing:6px; font-size:28px; font-family: 'Roboto', sans-serif; font-weight: 900;}
+#header .headerTop .hdLeft { padding-top:10px; float:left; overflow:hidden; margin-left: -1px;}
+#header .headerTop .hdLeft a {display: block;padding-left: 20px; height: 16px; letter-spacing: 0.5px; font-size: 12px; color: #000000; font-family: Roboto; font-weight: bold; line-height: 16px;}
+#header .headerTop .hdRight { padding-top:11px; float:right }
+#header .headerTop .hdRight ul li { padding-left:18px; position:relative; float:left }
+#header .headerTop .hdRight ul li a {letter-spacing: 0.1px; display:block; font-size:12px; color:#626262; font-family:Roboto; font-weight:400 }
+#bbsData{width:1100px;}
+
+
+#header .headerTop .searchArea { position:absolute; bottom:14px; right:0; width:180px; height:35px; border-bottom:1px solid #848484 }
+#header .headerTop .searchArea .MS_search_word { padding:0 5px; width:160px; height:34px; line-height:35px; border:none; vertical-align:top }
+#header .headerTop .searchArea a { position:absolute; top:4px; right:0; display:block; width:20px; height:25px; text-indent:-9999em;}
+#header .headerTop .cart_cnt{display: inline-block; width: 13px;}
+#header .headerTop .cart_cnt span{ background: #000; width: 17px; height: 17px; border-radius: 100%; display: inline-block; text-align: center; line-height: 18px; color: #fff; margin-left: 3px; position: absolute; top: -2px;}
+
+#header .headerBottom { margin:0 auto; position:relative; width:1200px; height:50px;  margin-top: 170px; }
+#header .headerBottom .navWrap { position:relative; *zoom:1 }
+#header .headerBottom .navWrap:after { display:block; clear:both; content:'' }
+#header .headerBottom .navWrap .lnb_wrap { width:100%; height:47px;}
+#header .headerBottom .navWrap .lnb_wrap.active{ background:#000;}
+#header .headerBottom .navWrap .lnb_wrap .menuAll { position:absolute; top:0; /*left:-20px;*/ width:30px; height:47px; text-align:center; cursor:pointer }
+
+#header .headerBottom .navWrap .lnb_wrap.active .menuAll{left:0 !important;}
+
+#header .headerBottom .navWrap .lnb_wrap .menuAll #btn_allMenu { width:56px; height:47px; text-indent:-9999em;margin-left:-15px;}
+#header .headerBottom .navWrap .lnb_wrap .menuAll #btn_allMenu.active {margin-left: 0 !important; width:56px; height:47px; text-indent:-9999em;}
+
+#header .headerBottom .navWrap .lnb_wrap .menuAll #btn_allMenu span{}
+
+
+#header .headerBottom .navWrap .lnb_wrap > ul {float:left; padding-left:56px }
+#header .headerBottom .navWrap .lnb_wrap > ul.menulist{width: 966px;}
+#header .headerBottom .navWrap .lnb_wrap.active > ul.menulist{width: 100% !important;}
+#header .headerBottom .navWrap .lnb_wrap ul.menu_ico{float:right; padding-top: 10px;  padding-left: 42px !important;}
+#header .headerBottom .menu_ico li{float:left;  padding-right: 20px;}
+#header .headerBottom .menu_ico li:last-child{padding-right:0 !important;}
+
+#header .headerBottom .joinus{position:relative;}
+
+#header .headerBottom .navWrap .lnb_wrap.active ul .lnb_depth1{width: 140px !important;}
+#header .headerBottom .navWrap .allMenuView.active .all_menuList ul{width: 140px !important;}
+#header .headerBottom .navWrap .allMenuView.active  .all_menuList { padding-left: 53px !important;}
+
+
+
+
+
+#header .headerBottom .navWrap ul .lnb_depth1 { position:relative; float:left; width:120px; height:47px; padding:0 10px;}
+#header .headerBottom .navWrap ul .lnb_depth1 > a {display: block; padding-left: 2px; height: 47px; font-size: 14px; text-align: center; line-height: 47px; font-family: malgun Gothic !important; color: #000 !important; }
+#header .headerBottom .navWrap .lnb_wrap.active ul .lnb_depth1 > a{color:#fff !important; }
+#header .headerBottom .navWrap ul .lnb_depth1 .lnb_depth2 { display:none; position:absolute; top:47px; left:2px; width:99%; background:#0e67ec; z-index:10 }
+#header .headerBottom .navWrap ul .lnb_depth1 .lnb_depth2 ul li { height:39px; text-align:center; border-bottom:1px solid #133217 }
+#header .headerBottom .navWrap ul .lnb_depth1 .lnb_depth2 ul li a { display:block; height:39px; font-size:12px; color:#fff; line-height:39px }
+#header .headerBottom .navWrap ul .lnb_depth1 .lnb_depth2 ul li a:hover { color:#fff363 }
+
+#header .headerBottom .navWrap .allMenuView { display:none; position:absolute; top:47px; left:0; width:100%;  background:#000; z-index:10 }
+#header .headerBottom .navWrap .allMenuView .all_menuList { padding-left:56px; overflow:hidden; *zoom:1 }
+#header .headerBottom .navWrap .allMenuView .all_menuList:after { display:block; clear:both; content:'' }
+#header .headerBottom .navWrap .allMenuView .all_menuList ul { padding-top:10px; float:left; width:118px; height:475px; border-left:1px solid #000; padding:0 10px;}
+#header .headerBottom .navWrap .allMenuView .all_menuList ul li { height:33px; text-align:center }
+#header .headerBottom .navWrap .allMenuView .all_menuList ul li a {
+    white-space: nowrap;  display:block; height:39px; font-size:13px; color:#fff; line-height:39px }
+#header .headerBottom .navWrap .allMenuView .all_menuList ul li a:hover { color:#fff363 }
+#header .headerBottom .point{ border-radius: 10px; position: absolute; top: 35px; left: 38%; margin-left: -30px; width: 56px; height: 17px; line-height: 17px; background: #424242; color: #fff; text-align: center; }
+#header .headerBottom .point span{position: absolute; top: -4px; left: 50%; margin-left: -4px; width: 8px; height: 4px; }
+#header .headerBottom .point em{font-size:11px;}
+
+/*�Խ��� Ÿ��Ʋ*/
+
+.faqtit {width:1100px; margin:auto; height:200px; font-size:35px; text-align: center;}
+.faqtit li.head {padding:50px 0 15px 0px; font-size:40px; color:#000; }
+.faqtit li.faqmemo {padding-top:0px; font-size:18px; color:#000;}
+
+
+/* BASIC css end */
+

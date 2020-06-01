@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="ko" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="ko" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="ko" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
+
+<!-- Mirrored from sso.ebs.co.kr/idp/join/intro.jsp by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 May 2020 15:05:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<title>대림마켓 - 회원가입</title>
+
+<link type="text/css" rel="stylesheet" href="css/login/common_renew_v1.css" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<!-- ebslang 킹목달 스크립트(2013.10.15) -->
+
+<script>
+
+</script>
+</head>
+<body>
+
+<!-- 본문 -->
+<div id="contents_body" class="contents step_agree_new lang_ko">
+	<div class="heading_tit">
+		<div><img src="images/titlelogo.png"> </div>
+		<p class="main_desc"><strong>대림마켓</strong> 회원가입을 환영합니다.</p>
+	</div>
+	
+	<form action="register2.html" method="post" class="frmbox" name="joinForm" id="joinForm">
+		
+		<h2 class="next_tit">개인정보 수집 및 이용에 대한 안내 (필수)</h2>
+		<table summary="개인정보 수집 및 이용 안내 테이블. 수집목적, 수집항목, 보유기간" class="data_table">
+			<caption>개인정보 수집 및 이용에 대한 안내 (필수)</caption>
+			<colgroup>
+				<col width="33.3%" />
+				<col width="33.3%" />
+				<col width="33.3%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">수집목적</th>
+					<th scope="col">수집항목</th>
+					<th scope="col">보유기간</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>이용자 식별 및 본인 여부 확인</td>
+					<td>학과, 학번, 비밀번호, 이름, 핸드폰 번호</td>
+					<td rowspan="2">회원탈퇴 시 까지</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p class="agreement">
+			<input type="checkbox"id="agree2" name="prsnl_info_essntl_agree_yn" value="Y"/>
+			<label for="agree2" class="st_label01"><i></i>개인정보 수집 및 이용(필수)에 대한 안내를 이해하였으며 동의 합니다.</label>
+		</p>
+		
+		<h2 class="next_tit">개인정보 수집 및 이용에 대한 안내 <span>(선택)</span></h2>
+		<table summary="개인정보 수집 및 이용 안내 테이블. 수집목적, 수집항목, 보유기간" class="data_table">
+			<caption>개인정보 수집 및 이용에 대한 안내 (선택)</caption>
+			<colgroup>
+				<col width="33.3%" />
+				<col width="33.3%" />
+				<col width="33.3%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">수집목적</th>
+					<th scope="col">수집항목</th>
+					<th scope="col">보유기간</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>이용자 식별 및 본인 여부 확인</td>
+					<td>성별, 이메일</td>
+					<td>회원탈퇴 시 까지</td>
+				</tr>
+			</tbody>
+		</table>
+		<p class="agree_desc">
+			* 동의를 거부하시는 경우에도 회원가입이 가능합니다.
+		</p>
+		<p class="agreement">
+			<input type="checkbox"id="agree3" name="prsnl_info_selct_agree_yn" value="Y"/>
+			<label for="agree3" class="st_label01"><i></i>개인정보 수집 및 이용(선택)에 대한 안내를 이해하였으며 동의 합니다.</label>
+		</p>
+		
+		<div class="btn_area">
+			<button class="cssbtn big on" id="confirmButton">
+				<span>확인</span>
+			</button>
+		</div>
+	</form>
+</div>
+
+
+
+<!-- footer -->
+
+
+
+<div class="footer txt_footer lang_ko">
+
+	<ul class="f_info">
+		<li>경기도 안양시 동안구 비산동 임곡로 29&nbsp;전산관 5층&nbsp;|&nbsp;&nbsp; 모바일인터넷과 이원택 </li>
+	</ul>
+	<p class="copy">Copyright ⓒ <span>대림마켓</span> All Rights Reserved</p>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	//체크박스 포커싱
+	$('.next-focus').click(function(){
+		if ( $(this).attr('id') == 'agree1' ) {
+			$('#agree2').siblings('label').focus();
+		} else if ( $(this).attr('id') == 'agree2' ) {
+			$('#confirmButton').focus();
+		}
+	});
+	
+	//submit 필수 약관 동의 확인
+	$('#joinForm').submit(function(event){
+		if (!$('#agree2').is(':checked')) {
+			alert('이용약관과 개인정보 수집 및 이용에 대한 안내(필수)에 대해서\n동의해 주세요.');
+			return false;
+		}
+	});
+
+	//모바일일때 언어선택이 드롭다운리스트로 변환
+	var mdlang = $('.nav_lang li.on').text();
+	var mdlst = $('.selct');
+	$(mdlst).children('a').text(mdlang);
+	$(mdlst).click(function(){
+		if ($(this).hasClass('on')) {
+			$(this).removeClass('on');
+		}else{
+			$(this).addClass('on');
+		}
+	});
+});
+</script>
+</body>
+
+<!-- Mirrored from sso.ebs.co.kr/idp/join/intro.jsp by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 May 2020 15:05:04 GMT -->
+</html>
